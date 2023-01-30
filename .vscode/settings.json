@@ -1,0 +1,13 @@
+{
+    "files.associations": {
+        "exception": "c",
+        "limits": "c",
+        "type_traits": "c",
+        "vector": "c",
+        "xstddef": "c",
+        "xutility": "c",
+        "xmemory": "c",
+        "stdio.h": "c",
+        "initializer_list": "c"
+    }
+}
