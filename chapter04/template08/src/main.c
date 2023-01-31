@@ -3,8 +3,9 @@
 
 int main()
 {
-    FILE *test = fopen("test","w+");
-    IntSorterError errorcode = int_sorter(test->_tmpfname);
+    // FILE *test = fopen("test","r");
+    char* fname = "D:\\test.txt";
+    IntSorterError errorcode = int_sorter(fname);
     printf("file create = %d \n", errorcode);
     return errorcode;
 }

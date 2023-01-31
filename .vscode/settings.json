@@ -10,6 +10,7 @@
         "xmemory": "c",
         "stdio.h": "c",
         "initializer_list": "c",
-        "int_sorter.h": "c"
+        "int_sorter.h": "c",
+        "file_accessor.h": "c"
     }
 }

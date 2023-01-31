@@ -34,23 +34,23 @@ typedef struct
 } MyFileAccessorContext; // 重载包含文件和内存两种操作模板的上下文
 
 // go through
-IntSorterError sort_A_file_to_B_file(FILE *file_A, FILE *file_B)
-{
-    Context context = {file_A, ERR_CAT_OK};
-    long size_of_A = file_size(file_A);
-    if (size_of_A == -1)
-    {
-        file_error(&context);
-        return context.errorCategory;
-    }
-    MyBufferContext sort_buffer_context = {{NULL, size_of_A, sort_to_buffer}, &context};
-    if (!buffer(&sort_buffer_context.base))
-    {
-        context.errorCategory = ERR_CAT_MEMORY;
-    }
-    
-    return context.errorCategory;
-}
+// IntSorterError sort_A_file_to_B_file(FILE *file_A, FILE *file_B)
+// {
+//     Context context = {file_A, ERR_CAT_OK};
+//     long size_of_A = file_size(file_A);
+//     if (size_of_A == -1)
+//     {
+//         file_error(&context);
+//         return context.errorCategory;
+//     }
+//     MyBufferContext sort_buffer_context = {{NULL, size_of_A, sort_to_buffer}, &context};
+//     if (!buffer(&sort_buffer_context.base))
+//     {
+//         context.errorCategory = ERR_CAT_MEMORY;
+//     }
+
+//     return context.errorCategory;
+// }
 
 IntSorterError int_sorter(const char *pFname)
 { // 对文件内容进行排序
