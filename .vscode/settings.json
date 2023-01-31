@@ -1,6 +1,7 @@
 {
     "files.associations": {
         "exception": "c",
+        "compilerPath": "C:/MinGW/bin/gcc.exe",
         "limits": "c",
         "type_traits": "c",
         "vector": "c",
@@ -8,6 +9,7 @@
         "xutility": "c",
         "xmemory": "c",
         "stdio.h": "c",
-        "initializer_list": "c"
+        "initializer_list": "c",
+        "int_sorter.h": "c"
     }
 }
